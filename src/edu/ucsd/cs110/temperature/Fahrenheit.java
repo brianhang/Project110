@@ -9,15 +9,15 @@ public class Fahrenheit extends Temperature {
     }
 
     public Temperature toCelcius() {
-        return null;
+        return new Celsius((getValue() - 32.0f) * (5.0f / 9.0f));
     }
 
     public Temperature toFahrenheit() {
-        return null;
+        return new Fahrenheit(getValue());
     }
 
     @Override
     public String toString() {
-        return "";
+        return getValue() + " F";
     }
 }
